@@ -15,6 +15,7 @@ class Olan
     )
 
 	def call(env)
+        p env
         [200, {}, ["HELLO"]]
 	end
 end
