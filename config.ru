@@ -1,5 +1,8 @@
 #!/usr/bin/env -S falcon --verbose serve -c
 
+require "db/client"
+require "db/postgres"
+
 class Olan
     CONNECTION = DB::Client.new(
         DB::Postgres::Adapter.new(
@@ -12,7 +15,7 @@ class Olan
     )
 
 	def call(env)
-        [200, {}, []]
+        [200, {}, ["HELLO"]]
 	end
 end
 
