@@ -1,0 +1,1 @@
+`OLAN_ENV=development bundle exec ruby db/migrator.rb`
