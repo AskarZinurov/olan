@@ -2,8 +2,7 @@
 
 source "https://rubygems.org"
 
-
-group :development do
+group :development, :test do
   gem "dotenv", require: "dotenv/load"
   gem "rspec", "~> 3.12"
 end
